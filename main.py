@@ -45,6 +45,8 @@ def main():
                 if asteroid.collides_with(shot):
                     shot.kill()
                     asteroid.split()
+                    player.score += 1
+                    print(player.score)
 
         screen.fill("black")
 
